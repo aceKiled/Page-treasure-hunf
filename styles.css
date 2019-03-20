@@ -1,0 +1,11 @@
+#secretMessage3{
+    color: white;    
+}
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+.hiddenpic {
+  max-width: 100%;
+  height: auto;
+}
