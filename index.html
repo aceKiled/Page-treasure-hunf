@@ -1,0 +1,59 @@
+<!DOCTYPE html> <html><head>
+        <title>Page treasure hunf </title>
+                <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>#secretMessage3{
+    color: white;    
+}
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+.hiddenpic {
+  max-width: 100%;
+  height: auto;
+}</style></head>
+    <body>
+          <h1>Digital Treasure Hunt</h1>
+        <img id="treasure" src="https://images-na.ssl-images-amazon.com/images/I/81uzRsUHCXL._SX355_.jpg"><br>
+        <button>Click me!</button>
+        <p id="secretMessage3">click on the header!!</p>
+        <p id="secretMessage"></p>
+        <p id="secretMessage2"></p>
+        <img id="hiddenPic" src="https://tatyanaseverydayfood.com/wp-content/uploads/2018/02/Strawberry-Tuxedo-Cake-4.jpg">
+        
+        <img src="http://vignette2.wikia.nocookie.net/epicrapbattlesofhistory/images/4/4b/Rick_Hooray_Confetti.gif/revision/latest?cb=20150502054416" class="hooray">
+        <p class="hooray">You did it!!</p>
+        <script src="script.js"></script>     
+    
+
+<script>
+/*__POPCODESTART__*/
+$(document).ready(function() {
+
+$("#hiddenPic").hide();
+$(".hooray").hide();
+
+$("button").click(function(){
+    $("#secretMessage").append("Now double click here...");
+});
+$("#secretMessage").dblclick(function(){
+    $("#hiddenPic").show();
+    $("#secretMessage").text("click the cake");
+});
+$("#hiddenPic").hover(function(){
+    $("#secretMessage").text("Nice job. You'll find your next clue by clicking on the treasure");
+});
+$("#treasure").click(function(){
+    $("body").css("background", "aqua");
+});
+$("h1").click(function(){
+    $("p").hide();
+    $("img").hide();
+    $("button").hide();
+    $(".hooray").show();
+});
+
+});
+</script></body></html>
